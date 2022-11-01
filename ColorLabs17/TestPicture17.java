@@ -29,12 +29,17 @@ public class TestPicture17
      
      //relative path
      Picture apic = new Picture("images\\beach.jpg");
+     //object           constructor - holds different attributes about the object
+     //                 default contructor when there is nothing inside the parentheses
      Picture ferris1 = new Picture("images/2000 ferris wheel2.jpg");
      Picture ferris2 = new Picture("images/2000 ferris wheel2.jpg");
+     Picture k2 = new Picture("images/20kitten2.jpg");
+     Picture w2 = new Picture("images/wall.jpg");
      Picture ferris3 = new Picture("images/2000 ferris wheel2.jpg");
-
-     //apic.explore();
+     Picture person = new Picture("images/barbra.jpg");
+     apic.explore();
      ferris1.explore();
+     //      method
      
      //makes an array of pixels
      Pixel[] pixels;
