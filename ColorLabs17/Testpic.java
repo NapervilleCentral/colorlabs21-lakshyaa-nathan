@@ -14,13 +14,14 @@ public class Testpic
         Picture factor = new Picture("images/barbaraS.jpg");
         Picture gray = new Picture("images/barbaraS.jpg");
         Picture lighten = new Picture("images/barbaraS.jpg");
-        Picture p6 = new Picture("images/barbaraS.jpg");
-        Picture p7 = new Picture("images/barbaraS.jpg");
-        Picture p8 = new Picture("images/barbaraS.jpg");
+        Picture colorify = new Picture("images/barbaraS.jpg");
+        Picture swap2 = new Picture("images/barbaraS.jpg");
+        Picture swap3 = new Picture("images/barbaraS.jpg");
         
         Pixel[] pixelsC;
         pixelsC = maxred.getPixels();
 
+        
         int count = 0;
         for (Pixel spotC : pixelsC)
         {
@@ -102,5 +103,52 @@ public class Testpic
             spot.setColor(new Color(r,g,b));            
         }
         lighten.explore();
+        
+        orig.explore();
+        
+        Pixel[] pixels6;
+        pixels6 = colorify.getPixels();
+        for (Pixel spot : pixels6)
+        {
+            r = spot.getRed();
+            g = spot.getGreen();
+            b = spot.getBlue();
+            
+            if (r>=152&&r<=219&&g>=101&&g<=174&&b>=80&&b<=153)
+            {
+                spot.setColor(new Color(0, 0, 255));                   
+            }
+            
+                     
+        }
+        colorify.explore();
+        
+        Pixel[] pixels7;
+        pixels7 = swap2.getPixels();
+        for (Pixel spot : pixels7)
+        {
+            r = spot.getRed();
+            g = spot.getGreen();
+            b = spot.getBlue();
+            
+            
+            spot.setColor(new Color(g, r, b));                   
+            
+        }
+        swap2.explore();
+        
+        Pixel[] pixels8;
+        pixels8 = swap3.getPixels();
+        for (Pixel spot : pixels8)
+        {
+            r = spot.getRed();
+            g = spot.getGreen();
+            b = spot.getBlue();
+            
+            
+            spot.setColor(new Color(b, g, r));                   
+            
+        }
+        swap3.explore();
     }
 }
