@@ -13,7 +13,7 @@ public class selfie
         Picture selfie = new Picture("selfieimage/selfie.jpg");
         Picture selfie1 = new Picture("selfieimage/selfie.jpg");
         Picture selfie2 = new Picture("selfieimage/selfie.jpg");
-        
+        /*
         selfie.explore();
         // method 1 -----------------------------
         
@@ -32,10 +32,10 @@ public class selfie
             if (ave>=63.75&&ave<127.5){ //second darkest
                 spot.setColor(new Color(178,34,34));
             }
-            if (ave>=127.5&&ave<255){ //second lightest
+            if (ave>=127.5&&ave<191.25){ //second lightest
                 spot.setColor(new Color(32,178,170));
             }
-            if (ave>=255){ //lightest
+            if (ave>=191.25){ //lightest
                 spot.setColor(new Color(255,248,220));
             }
         }
@@ -83,5 +83,36 @@ public class selfie
             
         
         selfie1.explore();
+        //selfie1.write("selfieimage/selfie.jpg");
+        */
+        // method 3 -----------------------------------
+        Pixel [] pixels2;
+        pixels2 = selfie2.getPixels();
+        int r, g, b;
+        
+        for(Pixel spot:pixels2){
+            r = spot.getRed();
+            g = spot.getGreen();
+            b = spot.getBlue();
+            
+            double ave = (r+g+b)/3;
+            
+            if(ave<63.75)
+                spot.setColor(new Color(14, 106, 0));
+            else if(ave>=63.75&&ave<127.5)
+                spot.setColor(new Color(237, 109, 118));
+            else if(ave>=127.5&&ave<191.25)
+                spot.setColor(new Color(32,178,170));
+            else if(ave>=191.25)
+                spot.setColor(new Color(255, 246, 205));
+            
+        }
+        selfie2.explore();
+        selfie2.write("selfieimage/SFtry1.pictureformat.jpg");
+        //selfie2.write("selfieimage/selfie.jpg");
+        //selfie2.write("selfieimage/selfie.jpg");
+        //selfie2.write("selfieimage/selfie.jpg");
     }
 }
+
+
