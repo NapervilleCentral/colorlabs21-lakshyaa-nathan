@@ -10,4 +10,8 @@ VERSION or DATE:
 HOW TO START THIS PROJECT:
 AUTHORS:
 USER INSTRUCTIONS:
-hello
+
+Trial 1: I started by creating four equal buckets. I think there is too much blue in the picture, and the faces could use more
+definition. I also think there should be more white, and the dark blue should be a green. 
+
+Trial 2: I like the definition on the face, but I think there is too much green on my face. I will make the green bucket smaller. 
