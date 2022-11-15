@@ -98,7 +98,7 @@ public class selfie
             double ave = (r+g+b)/3;
             
             if(ave<40)
-                spot.setColor(new Color(32, 179, 76)); //green
+                spot.setColor(new Color(20, 32, 125)); //green
             else if(ave>40&&ave<100)
                 spot.setColor(new Color(237, 109, 118)); //pink
             else if(ave>=100&&ave<150)
@@ -108,7 +108,7 @@ public class selfie
             
         }
         selfie2.explore();
-        selfie2.write("selfieimage/SFtry3.jpg");
+        selfie2.write("selfieimage/SFtry4.jpg");
         //selfie2.write("selfieimage/selfie.jpg");
         //selfie2.write("selfieimage/selfie.jpg");
         //selfie2.write("selfieimage/selfie.jpg");
