@@ -13,7 +13,7 @@ public class selfie
         Picture selfie = new Picture("selfieimage/selfie.jpg");
         Picture selfie1 = new Picture("selfieimage/selfie.jpg");
         Picture selfie2 = new Picture("selfieimage/selfie.jpg");
-        /*
+        
         selfie.explore();
         // method 1 -----------------------------
         
@@ -40,7 +40,7 @@ public class selfie
             }
         }
         selfie.explore();
-        //selfie.write("images/selfie.jpg");
+        
         
         
         //method 2-------------------------------------------
@@ -64,7 +64,7 @@ public class selfie
             
             
         }
-            //loop
+          
             double interval = (big-s)/4;
         for(Pixel spot:pixels1){
             if(spot.getRed()<interval){
@@ -83,8 +83,8 @@ public class selfie
             
         
         selfie1.explore();
-        //selfie1.write("selfieimage/selfie.jpg");
-        */
+        
+        
         // method 3 -----------------------------------
         Pixel [] pixels2;
         pixels2 = selfie2.getPixels();
@@ -98,20 +98,20 @@ public class selfie
             double ave = (r+g+b)/3;
             
             if(ave<40)
-                spot.setColor(new Color(20, 32, 125)); //green
-            else if(ave>40&&ave<100)
+                spot.setColor(new Color(20, 32, 125)); //dark blue
+            else if(ave>40&&ave<60)
                 spot.setColor(new Color(237, 109, 118)); //pink
-            else if(ave>=100&&ave<150)
-                spot.setColor(new Color(32,178,170)); //blue
-            else if(ave>=150)
+            else if(ave>=60&&ave<100)
+                spot.setColor(new Color(236, 43, 43)); // red
+            else if(ave>=100&&ave<140)
+                spot.setColor(new Color(32,178,170)); //light blue
+            else if(ave>=140)
                 spot.setColor(new Color(255, 246, 205)); //white
             
         }
         selfie2.explore();
-        selfie2.write("selfieimage/SFtry4.jpg");
-        //selfie2.write("selfieimage/selfie.jpg");
-        //selfie2.write("selfieimage/selfie.jpg");
-        //selfie2.write("selfieimage/selfie.jpg");
+        selfie2.write("selfieimage/SFmyfinal.jpg");
+        
     }
 }
 

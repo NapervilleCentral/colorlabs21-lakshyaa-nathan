@@ -11,10 +11,10 @@ HOW TO START THIS PROJECT:
 AUTHORS:
 USER INSTRUCTIONS:
 
-Trial 1: I started by creating four equal buckets. I think there is too much blue in the picture, and the faces could use more
-definition. I also think there should be more white, and the dark blue should be a green. 
+Trial 1: I started by creating four equal buckets. The faces could use more
+definition. I also think there should be more white. There might need to be more contrast between the colors, as all the colors are light. 
 
-Trial 2: I like the definition on the face, but I think there is too much green on my face. I will make the green bucket smaller.
+Trial 2: I like the definition on the face, but I think there is too much green on my face. I will make the green bucket smaller and change the 
+green to a dark blue. This will also add even more definition to the faces. 
 
-Trial 3: I changed my mind about the light green - I want to change it back into a darker color. I also want to add another color
-to add more definition to the faces 
+Trial 3: I want to add two other colors to add some more depth to the whole picture. I think that this color should be red and light green, as it will stand out in the picture.
