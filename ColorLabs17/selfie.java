@@ -14,7 +14,9 @@ public class selfie
         Picture selfie1 = new Picture("selfieimage/selfie.jpg");
         Picture selfie2 = new Picture("selfieimage/selfie.jpg");
         
+        // original selfie 
         selfie.explore();
+        
         // method 1 -----------------------------
         
         Pixel [] pixels;
@@ -48,6 +50,8 @@ public class selfie
         pixels1 = selfie1.getPixels();
         double big = 0;
         double s = 255;
+        
+        // finding biggest and smallest rbg values 
         for(Pixel spot:pixels1){
             int r = spot.getRed();
             int g = spot.getGreen();
@@ -65,7 +69,11 @@ public class selfie
             
         }
           
+            // finding intervals for buckets
             double interval = (big-s)/4;
+            
+            
+        // setting colors 
         for(Pixel spot:pixels1){
             if(spot.getRed()<interval){
                 spot.setColor(new Color(0,0,139));
@@ -95,6 +103,7 @@ public class selfie
             g = spot.getGreen();
             b = spot.getBlue();
             
+            // finding average rbg value
             double ave = (r+g+b)/3;
             
             if(ave<40)
